@@ -1,0 +1,108 @@
+.popUpBlock {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+}
+
+.popUp {
+  width: 100%;
+  max-width: 480px;
+  height: 600px;
+  /* background: url(./images/decor-3.png) no-repeat -160px 260px / 400px, url(./images/decor-1.png) no-repeat 240px -160px / 400px, url(./images/background-pop-up.png) no-repeat center center / cover, linear-gradient(147.38deg, #720102 0%, #D30003 62.42%, #BD0006 100%); */
+  background: url(./images/background-pop-up.png) no-repeat center center / cover, linear-gradient(147.38deg, #720102 0%, #D30003 62.42%, #BD0006 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  position: relative;
+  border: 8px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #D4A048 0%, #DED5C8 25.52%, #805019 48.44%, #F8F0E3 77.08%, #CA8B33 100%);
+  padding: 55px 35px 195px;
+  overflow: hidden;
+}
+
+.popUpLogo {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 auto 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.popUpInput {
+  font-family: 'GothamPro_Regular';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 16px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 4px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #D4A048 0%, #DED5C8 25.52%, #805019 48.44%, #F8F0E3 77.08%, #CA8B33 100%);
+  position: relative;
+  z-index: 2;
+}
+
+.popUpInput::placeholder {
+  color: #7C7C7C;
+}
+
+.popUpDecor1 {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: -160px;
+  bottom: -160px;
+  z-index: 1;
+}
+
+.popUpDecor2 {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  right: -160px;
+  top: -160px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 668px) {
+  .popUpDecor1 {
+    width: 320px;
+    left: -130px;
+  }
+
+  .popUpDecor2 {
+    width: 320px;
+    right: -130px;
+  }
+
+  .popUpLogo {
+    width: 180px;
+  }
+
+  .popUp {
+    margin: 0 10px;
+    padding: 36px 20px 148px;
+    border: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(135deg, #D4A048 0%, #DED5C8 25.52%, #805019 48.44%, #F8F0E3 77.08%, #CA8B33 100%);
+  }
+
+  .popUpInput {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 20px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(135deg, #D4A048 0%, #DED5C8 25.52%, #805019 48.44%, #F8F0E3 77.08%, #CA8B33 100%);
+  }
+}

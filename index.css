@@ -1,0 +1,462 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+:root {}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, small, strike, strong, b, i, ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li, form, label, table, tbody, tfoot, thead, tr, th, td, canvas, footer, header, menu, nav, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  background: #FFFFFF;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #bd0104 url(./images/background.png) no-repeat center top / cover;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+@font-face {
+  font-family: 'GothamPro_Bold';
+  src: url(./fonts/GothamPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'GothamPro_Regular';
+  src: url(./fonts/GothamPro-Regular.ttf);
+}
+
+.logoBlock, .contentBlock {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 22px 0;
+  /* box-sizing: border-box; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.contentBlock {
+  padding-bottom: 100px;
+}
+
+.logo {
+  width: 348px;
+  height: auto;
+  margin: 50px 0;
+}
+
+.contentLeft {
+  width: 66%;
+  position: relative;
+}
+
+.contentRight {
+  width: 31.9%;
+  position: relative;
+}
+
+.videoBlock {
+  width: 100%;
+  height: auto;
+  border: 8px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #D4A048 0%, #DED5C8 25.52%, #805019 48.44%, #F8F0E3 77.08%, #CA8B33 100%);
+  box-shadow: inset 0px 0px 80px 0px rgba(0, 0, 0, 0.3), 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.buttonBlock {
+  width: fit-content;
+  margin: 80px auto 0;
+  position: relative;
+}
+
+#button {
+  display: block;
+  font-family: 'GothamPro_Bold';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 20px;
+  color: #F4C87D;
+  padding: 15px 21px;
+  background: radial-gradient(50% 50% at 50% 50%, #EE6733 0%, #AB431B 71.88%, #7D1E0E 100%);
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #D4A048 0%, #DED5C8 25.52%, #805019 48.44%, #F8F0E3 77.08%, #CA8B33 100%);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.decor4, .decor5 {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  display: block;
+  z-index: -1;
+}
+
+.decor4 {
+  left: -60px;
+  top: -40px;
+}
+
+.decor5 {
+  right: -60px;
+  bottom: -40px;
+}
+
+.chatBlock {
+  width: 100%;
+  /* height: 640px; */
+  box-sizing: border-box;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.4);
+  border: 8px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(135deg, #D4A048 0%, #DED5C8 25.52%, #805019 48.44%, #F8F0E3 77.08%, #CA8B33 100%);
+  position: relative;
+}
+
+.decor1 {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  left: -219px;
+  bottom: -100px;
+  z-index: -1;
+}
+
+.decor2 {
+  width: 494px;
+  height: auto;
+  position: absolute;
+  right: -202px;
+  top: -252px;
+  z-index: -1;
+}
+
+.decor3 {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  right: -219px;
+  bottom: -100px;
+  z-index: -1;
+}
+
+.showName {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  right: -60px;
+  top: 40px;
+  z-index: 10;
+}
+
+.messages {
+  width: calc(100% - 22px);
+  height: 547px;
+  box-sizing: border-box;
+  padding: 19px 19px 0 19px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+  width: 12px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: #E5E5E5;
+  border-radius: 100px;
+  margin-top: 19px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: radial-gradient(50% 50% at 50% 50%, #EE6733 0%, #AB431B 71.88%, #7D1E0E 100%);
+  border-radius: 100px;
+  border: 4px solid #E5E5E5;
+}
+
+.messageMine, .messageMine .chatText {
+  text-align: right !important;
+}
+
+.messageMine .chatName {
+  display: inline-block;
+}
+
+.chatName {
+  font-family: 'GothamPro_Bold';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #A92100;
+  margin-top: 12px;
+}
+
+.chatText {
+  font-family: 'GothamPro_Regular';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  margin-top: 11px;
+}
+
+.messageFirst {
+  margin-top: 50px;
+}
+
+.chatInput {
+  font-family: 'GothamPro_Regular';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  padding: 16px 0 16px 24px;
+  width: calc(100% - 24px - 52px);
+  background: transparent;
+}
+
+.chatInput::placeholder {
+  color: #7C7C7C
+}
+
+#sendBlock {
+  width: 52px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send {
+  width: 28px;
+  height: 28px;
+}
+
+.inputBlock {
+  width: calc(100% - 32px);
+  margin: 16px 16px 16px;
+  background: #E5E5E5;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.buttonTablet {
+  display: none;
+}
+
+.buttonComment {
+  font-family: 'GothamPro_Regular';
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  max-width: 342px;
+  margin: 40px auto 0;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1550px) {
+  .showName {
+    right: -40px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .showName {
+    right: -20px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .showName {
+    right: 3px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 868px) {
+  .buttonDesktop {
+    display: none;
+  }
+
+  .buttonTablet {
+    display: block;
+  }
+
+  .logo {
+    width: 309px;
+  }
+
+  .showName {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 124px;
+    margin: 20px 0 20px;
+  }
+
+  .contentLeft, .contentRight {
+    width: 100%;
+  }
+
+  .contentRight {
+    margin-top: 20px;
+  }
+
+  .contentBlock {
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+
+  .messages {
+    height: 248px;
+  }
+
+  .decor3 {
+    width: 320px;
+    right: -180px;
+    bottom: -80px;
+  }
+
+  .decor2 {
+    display: none;
+  }
+
+  .decor1 {
+    width: 320px;
+    left: -180px;
+    bottom: -80px;
+  }
+
+  .buttonBlock {
+    margin: 60px auto 0;
+  }
+  .messageFirst{
+    margin-top: auto;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .logo {
+    width: 203px;
+    margin: 35px 0;
+  }
+
+  .showName {
+    width: 80px;
+    margin: 16px 0;
+  }
+
+  .chatName {
+    font-size: 14px;
+    line-height: 13px;
+  }
+
+  .chatText {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .chatInput {
+    font-size: 14px;
+    padding: 4px 0 4px 20px;
+  }
+
+  #sendBlock {
+    height: 42px;
+  }
+
+  #button {
+    font-size: 20px;
+  }
+
+  .logoBlock, .contentBlock {
+    padding: 0 10px;
+  }
+
+  .contentBlock {
+    padding: 0 10px 64px;
+  }
+
+  body {
+    min-width: 320px;
+  }
+
+  .buttonComment {
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 300px;
+  }
+}
